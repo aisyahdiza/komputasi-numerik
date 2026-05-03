@@ -6,6 +6,7 @@
 | 5025251064 | Mas Ayu Lana Afiah    |
 | 5025251062 | Aisyah Putri Diza                 |
 </div>
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
