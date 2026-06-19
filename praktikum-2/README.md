@@ -33,11 +33,11 @@ def hitung_trap(a, b, n, rumus):
     return hasil * h
 ```
 Fungsi `hitung_trap` akan menghitung integral menggunakan metode Trapezoidal.
-a = batas bawah
-b = batas atas
-n = segmen
-h = lebar interval
-hasil = setengah dari nilai ujung kiri + ujung kanan
+- a = batas bawah
+- b = batas atas
+- n = segmen
+- h = lebar interval
+- hasil = setengah dari nilai ujung kiri + ujung kanan
 Setelah mendapatkan nilai awal, jumlahkan seluruh titik tengah dengan looping for sebanyak n kali yang berisi `hasil += f(a + i * h, rumus)`. Setelah itu kalikan dengan lebar interval sesuai dengan rumus trapezoida.
 
 ### 4. Fungsi main()
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     main()
 ```
 Fungsi main berfungsi untuk membandingkan metode trapezoidal dan romberg. Rumus, batas bawah, dan batas atas yang digunakan berdasarkan input yang dimasukkan oleh user. 
-trap_2 menggunakan 2 bagian interval.
-trap_4 menggunakan 4 bagian interval sehingga setiap subinterval semakin kecil.
-trap_50 terbagi menjadi 50 bagian, nilai ini hanya sebagai pembanding yang cukup akurat.
-romberg menggunakan hasil trapezoidal yang sudah ada dan menghilangkan sebagian besar errornya dengan cara `trap_4 + (trap_4 - trap_2) / 3`.
+- trap_2 menggunakan 2 bagian interval.
+- trap_4 menggunakan 4 bagian interval sehingga setiap subinterval semakin kecil.
+- trap_50 terbagi menjadi 50 bagian, nilai ini hanya sebagai pembanding yang cukup akurat.
+- romberg menggunakan hasil trapezoidal yang sudah ada dan menghilangkan sebagian besar errornya dengan cara `trap_4 + (trap_4 - trap_2) / 3`.
