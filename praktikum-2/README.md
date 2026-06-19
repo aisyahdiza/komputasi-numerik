@@ -38,6 +38,7 @@ Fungsi `hitung_trap` akan menghitung integral menggunakan metode Trapezoidal.
 - n = segmen
 - h = lebar interval
 - hasil = setengah dari nilai ujung kiri + ujung kanan
+
 Setelah mendapatkan nilai awal, jumlahkan seluruh titik tengah dengan looping for sebanyak n kali yang berisi `hasil += f(a + i * h, rumus)`. Setelah itu kalikan dengan lebar interval sesuai dengan rumus trapezoida.
 
 ### 4. Fungsi main()
